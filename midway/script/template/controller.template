@@ -10,7 +10,7 @@ import {
   Put,
   Param,
   Del,
-} from '@midwayjs/decorator';
+} from '@midwayjs/core';
 import { $1DTO } from '../dto/$2';
 import { $1Service } from '../service/$2';
 
