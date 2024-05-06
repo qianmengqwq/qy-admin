@@ -5,7 +5,7 @@ import { Rule, RuleType } from '@midwayjs/validate';
 export class UserDTO {
   @ApiProperty({ description: 'id' })
   @Rule(RuleType.allow(null))
-  id?: number;
+  id?: string;
   @ApiProperty({ description: '姓名' })
   @Rule(RuleType.string().required().error(new Error('姓名不能为空')))
   name: string;

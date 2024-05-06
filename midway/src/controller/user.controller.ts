@@ -40,13 +40,13 @@ export class UserController {
   }
 
   @Del('/:id')
-  async remove(@Param('id') id: number) {
+  async remove(@Param('id') id: string) {
     const user = await this.userService.getById(id);
     return await this.userService.remove(user);
   }
 
   @Get('/:id')
-  async get(@Param('id') id: number) {
+  async get(@Param('id') id: string) {
     return await this.userService.getById(id);
   }
 

@@ -19,7 +19,7 @@ export default {
         username: 'root',
         password: '123456',
         database: 'test', // 数据库名称
-        synchronize: true, // 如果第一次使用，不存在表，有同步的需求可以写 true，注意会丢数据
+        synchronize: false, // 如果第一次使用，不存在表，有同步的需求可以写 true，注意会丢数据
         logging: true,
         // 扫描entity文件夹
         entities: [User],
